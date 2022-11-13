@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	id="WebApp_ID" version="5.0">
+	<display-name>java_jsp_web03</display-name>
+
+	<!-- configurar arquivo de inicialização do app -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- config servlets -->
+	<!-- servlet cadastrar -->
+	<servlet>
+		<servlet-name>Cadastrar</servlet-name>
+		<servlet-class>servlet.ServletCadastrar</servlet-class>
+		<load-on-startup>1</load-on-startup>
+		<!-- <init-param> <description>Passando nome do usuário</description> <param-name>user</param-name> 
+			<param-value>Simão Pedro Mendes Gabriel</param-value> </init-param> -->
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cadastrar</servlet-name>
+		<url-pattern>/cadastrar</url-pattern>
+	</servlet-mapping>
+
+	<!-- servlet comprar -->
+	<servlet>
+		<servlet-name>Comprar</servlet-name>
+		<servlet-class>servlet.ServletComprar</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Comprar</servlet-name>
+		<url-pattern>/comprar</url-pattern>
+	</servlet-mapping>
+
+	<!-- servlet listar -->
+	<servlet>
+		<servlet-name>Listar</servlet-name>
+		<servlet-class>servlet.ServletListar</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Listar</servlet-name>
+		<url-pattern>/listar</url-pattern>
+	</servlet-mapping>
+
+</web-app>
