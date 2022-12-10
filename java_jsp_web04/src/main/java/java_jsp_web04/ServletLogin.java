@@ -10,8 +10,14 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "login", urlPatterns = { "/login" }, initParams = { @WebInitParam(name = "user", value = "spedromg"),
-		@WebInitParam(name = "password", value = "123456") })
+@WebServlet(
+		name = "login", 
+		urlPatterns = { "/login" }, 
+		initParams = { 
+				@WebInitParam(name = "user", value = "spedromg"),
+				@WebInitParam(name = "password", value = "123456") 
+		}
+)
 public class ServletLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -27,7 +33,8 @@ public class ServletLogin extends HttpServlet {
 		
 		try {
 			out = resp.getWriter();
-						
+			
+			resp.setContentType("text/html");
 			out.print("<html><body>");
 			out.print("<h1>Login de Usuário</h1>");
 			out.print("<h3>Usuário:</h3> " + user);

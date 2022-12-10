@@ -8,6 +8,9 @@
 </head>
 <body>
 	<h1>Servlets and Annotations</h1>
-	<a href="http://localhost:8080/java_jsp_web04/login">login</a>
+	<a href="login">login</a>
+	<a href="compactar">compactar</a>
+	<a href="initdestroy">init-destroy</a>
+	<a href="contador">contador de requisições</a>
 </body>
 </html>
