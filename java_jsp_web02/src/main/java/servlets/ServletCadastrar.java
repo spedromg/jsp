@@ -11,14 +11,15 @@ public class ServletCadastrar extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		super.doGet(request, response);
-		System.out.println("Página de Cadastro, requisitado via GET");
-		
+		doIt(request, response);		
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		super.doPost(request, response);
-		System.out.println("Página de Cadastro, requisitado via POST");
+		doIt(request, response);
+	}
+	
+	public void doIt(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Página de Cadastro requisitada ...");
 	}
 }

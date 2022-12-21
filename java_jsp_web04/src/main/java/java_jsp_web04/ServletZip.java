@@ -2,7 +2,6 @@ package java_jsp_web04;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 
 import jakarta.servlet.ServletException;
@@ -17,14 +16,15 @@ public class ServletZip extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		super.doGet(req, resp);
 		resp.setContentType("application/zip");
+		
 		OutputStream out = null;
-		InputStream in = null;
+		FileInputStream in = null;
 
 		try {
 			out = resp.getOutputStream();
-			in = new FileInputStream("\\D:\\files\\java.zip");
+			resp.addHeader("Content-Disposition", "attachement, filename=java.zip");
+			in = new FileInputStream("D:/files/java.zip");
 
 			byte[] buffer = new byte[1024];
 			int numBytes;

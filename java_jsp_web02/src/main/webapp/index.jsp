@@ -10,7 +10,7 @@
 	<h1>My Home Page's Project</h1>
 	<h3>Java Web with Servlets</h3>
 	
-	<a href="http://localhost:8080/java_jsp_web02/listar">Listar Usuários</a>
-	<a href="http://localhost:8080/java_jsp_web02/cadastrar">Cadastrar Usuários</a>
+	<a href="listar">Listar Usuários</a>
+	<a href="cadastrar">Cadastrar Usuários</a>
 </body>
 </html>

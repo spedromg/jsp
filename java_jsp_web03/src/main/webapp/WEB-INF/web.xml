@@ -16,9 +16,11 @@
 	<servlet>
 		<servlet-name>Cadastrar</servlet-name>
 		<servlet-class>servlet.ServletCadastrar</servlet-class>
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>Sou um desenvolvedor Java danado de bom!!!</param-value>
+		</init-param>
 		<load-on-startup>1</load-on-startup>
-		<!-- <init-param> <description>Passando nome do usuário</description> <param-name>user</param-name> 
-			<param-value>Simão Pedro Mendes Gabriel</param-value> </init-param> -->
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Cadastrar</servlet-name>

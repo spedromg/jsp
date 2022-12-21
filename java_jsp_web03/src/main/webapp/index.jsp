@@ -8,8 +8,8 @@
 </head>
 <body>
 	<h1>Servelt Auto Initialization, Input and Output Patameters.</h1>
-	<a href="http://localhost:8080/java_jsp_web03/comprar">Comprar</a>
-	<a href="http://localhost:8080/java_jsp_web03/listar">Listar</a>
-	<a href="http://localhost:8080/java_jsp_web03/cadastrar">Cadastrar</a>
+	<a href="comprar">Comprar</a>
+	<a href="listar">Listar</a>
+	<a href="cadastrar">Cadastrar</a>
 </body>
 </html>
